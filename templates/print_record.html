@@ -1,0 +1,445 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            position: relative;
+        }
+        .name {
+    position: absolute;
+    font-size: 15px;
+    color: black;
+    top: 183px;
+    left: 350px;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+        .usagetype{
+            position: absolute;
+            font-size: 16px;
+            color: black;
+            top: 505px;
+            left: 258px;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+        .block_new{
+            position: absolute;
+            font-size: 23px;
+            color: black;
+            top: 468px;
+            left: 311px;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+        .street_new{
+            position: absolute;
+            font-size: 16px;
+            color: black;
+            top: 481px;
+            left: 631px;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+        .field_type{
+            position: absolute;
+            font-size: 16px;
+            color: black;
+            top: 457px;
+            left: 398px;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+        .name2{
+            position: absolute;
+    font-size: 13px;
+    color: black;
+    top: 264px;
+    right: 266px;
+    font-weight: 900;
+    font-family: fantasy;
+    letter-spacing: -0.5px;
+    width: 251px;
+    text-align: center;
+        }
+        .contract-number {
+            position: absolute;
+            top: 38px;
+            left: 52px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #f80202;
+        }
+        .date_of_contract {
+            position: absolute;
+            top: 127px;
+            left: 570px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #f80202;
+        }  
+        .nationality {
+            position: absolute;
+            top: 207px;
+            left: 665px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+        .nationality2 {
+            position: absolute;
+            top: 280px;
+            left: 667px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+        .phone{
+            position: absolute;
+            top: 213px;
+            left: 101px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .phone2{
+            position: absolute;
+            top: 289px;
+            left: 101px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .eaccount{
+            position: absolute;
+            top: 389px;
+            left: 406px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .cexpire{
+            position: absolute;
+            top: 691px;
+            left: 668px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .cexpire2{
+            position: absolute;
+            top: 691px;
+            left: 668px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .cexpire3{
+            position: absolute;
+            top: 688px;
+            left: 96px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .sdate{
+            position: absolute;
+            top: 673px;
+            left: 501px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .sdate2{
+            position: absolute;
+            top: 672px;
+            left: 327px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .sdate3{
+            position: absolute;
+            top: 1027px;
+            left: 351px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .cfees{
+            position: absolute;
+            top: 945px;
+            left: 526px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .comercialno{
+            position: absolute;
+            top: 315px;
+            left: 535px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .qrcode{
+            position: absolute;
+            top: 930px;
+            left: 49px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .qrcode img{
+            width: 117px;
+            height: 109px;
+        }
+        .cardno{
+            position: absolute;
+            top: 237px;
+            left: 336px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .mechanicno{
+            position: absolute;
+            top: 559px;
+            left: 709px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+        .profession{
+            position: absolute;
+            top: 559px;
+            right: 89px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+
+        .mechanicno2{
+            position: absolute;
+            top: 581px;
+            left: 598px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+        .profession2{
+            position: absolute;
+            top: 581px;
+            right: 40px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+
+        .mrant{
+            position: absolute;
+            top: 832px;
+            left: 346px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .mrant2{
+            position: absolute;
+            top: 835px;
+            left: 409px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;
+        }
+        .raqmul_qatga{
+        position: absolute;
+            top: 485px;
+            left: 464px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+            font-weight: 600;   
+        }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="{% static 'images/print16.jpg' %}" width="782px" alt="Print View">
+        <div class="name">
+            <p>{{get_record.name}}</p>
+        </div>
+        <div class="usagetype">
+            <p>{{get_record.usage_type}}</p>
+        </div>
+        <div class="field_type">
+            <p>{{get_record.field_type}}</p>
+        </div>
+        <div class="name2">
+            <p>
+                {{get_record.name_2}}
+               
+            </p>
+        </div>
+        <div class="contract-number">
+            <p>{{get_record.contract_number}}</p>
+        </div>
+        <div class="date_of_contract">
+            <p>{{get_record.date_of_contract}}</p>
+        </div>
+        <div class="nationality">
+            <p>{{get_record.nationality}}</p>
+        </div>
+        <div class="nationality2">
+            <p>{{get_record.nationality}}</p>
+        </div>
+        <div class="phone">
+            <p>{{get_record.phone_number}}</p>
+        </div>
+        <div class="phone2">
+            <p>{{get_record.phone_number2}}</p>
+        </div>
+        <div class="eaccount">
+            <p>{{get_record.electricity_account_number}}</p>
+        </div>
+        <div class="cexpire">
+            <p>{{get_record.contract_expiry_date}}</p>
+        </div>
+        <div class="cexpire2">
+            <p>{{get_record.contract_expiry_date}}</p>
+        </div>
+        <div class="cexpire3">
+            <p>{{get_record.contract_expiry_date}}</p>
+        </div>
+        <div class="sdate">
+            <p>{{get_record.date_of_contract}}</p>
+        </div>
+        <div class="sdate3">
+            <p>{{get_record.date_of_contract}}</p>
+        </div>
+        <div class="sdate2">
+            <p>{{get_record.date_of_contract}}</p>
+        </div>
+        <div class="cfees">
+            <p>{{get_record.contract_fees}}</p>
+        </div>
+        <div class="comercialno">
+            <p>
+                {% if get_record.commercial_register_2 %}
+                {{get_record.commercial_register_2}}
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="mechanicno">
+            <p>{{get_record.vichle_mechanic_repair}}</p>
+        </div>
+        <div class="profession">
+            <p>{{get_record.profession}}</p>
+        </div>
+        <div class="mechanicno2">
+            <p>
+                {% if get_record.vichle_mechanic_repair2 %}
+                {{get_record.vichle_mechanic_repair2}} :
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="profession2">
+            <p>
+                {% if get_record.profession2 %}
+                {{get_record.profession2}}
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="cardno">
+            <p>{{get_record.card_no}}</p>
+        </div>
+        <div class="mrant">
+            <p>{% if get_record.monthly_rent %}
+                {{get_record.monthly_rent}}
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="mrant2">
+            <p>{% if get_record.monthly_rent %}
+                {{get_record.monthly_rent}} 
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="raqmul_qatga">
+            <p>{% if get_record.raqmul_qatga %}
+                {{get_record.raqmul_qatga}} 
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="street_new">
+            <p>{% if get_record.street %}
+                {{get_record.street}} 
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="block_new">
+            <p>{% if get_record.block %}
+                {{get_record.block}} 
+                {% else %}
+                {% endif %}
+            </p>
+        </div>
+        <div class="qrcode">
+            <img src="{{get_record.qr_code.url}}" alt="">
+        </div>
+    </div>
+    <img src="{% static 'images/instruction.png' %}" width="782px" alt="Print View">
+</body>
+</html>

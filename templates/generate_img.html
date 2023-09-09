@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            position: relative;
+        }
+        
+        .name {
+            position: absolute;
+            font-size: 24px;
+            color: black;
+            top: 17%;
+    top: 16.6%;
+    left: 360px;
+    font-weight: bold;
+    font-size: 16px;    
+        }
+        .contract-number {
+            position: absolute;
+            top: 66px;
+            left: 112px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(228, 67, 67);
+        }
+        .date_of_contract {
+            position: absolute;
+            top: 130px;
+            left: 574px;
+            font-size: 19px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(204 44 44);
+        }  
+        .nationality {
+            position: absolute;
+            top: 207px;
+            left: 660px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: black; 
+        }
+        @media print {
+            body * {
+              display: hide !important;
+            }
+            
+            #pdfContent {
+              display: block !important;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="{% static 'images/print4.jpg' %}" width="100%" alt="Print View">
+        <div class="name">
+            <p>{{get_record.name}}</p>
+        </div>
+        <div class="contract-number">
+            <p>{{get_record.contract_number}}</p>
+        </div>
+        <div class="date_of_contract">
+            <p>{{get_record.date_of_contract}}</p>
+        </div>
+        <div class="nationality">
+            <p>{{get_record.nationality}}</p>
+        </div>
+    </div>
+</body>
+</html>
