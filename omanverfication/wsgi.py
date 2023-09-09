@@ -1,7 +1,7 @@
 """
-WSGI config for omanverfication project.
+WSGI config for your_project_name project.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+It exposes the WSGI callable as a module-level variable named "application".
 
 For more information on this file, see
 https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
@@ -11,6 +11,10 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'omanverfication.settings')
+# Set the DJANGO_SETTINGS_MODULE environment variable to point to your settings module.
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project_name.settings')
 
+# Create the WSGI application object.
 application = get_wsgi_application()
+
+app = application
